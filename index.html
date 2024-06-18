@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<title>Tv Show Search</title>
+</head>
+<style>
+	body {
+		background-image: url(bg.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		font-family: "Rajdhani", sans-serif;
+		font-weight: 600;
+		font-style: normal;
+	}
+	#_search{
+		text-align: center;
+		justify-content:center ;
+	}
+	#show_search{
+		width: 320px;
+		height: auto;
+		border: none;
+		border-radius: 12px;
+		margin: 12px;
+		padding: 12px;
+		background-color: whitesmoke;
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+	}
+	#show_search:hover{
+		background-color: white;
+	}
+
+	#search_btn{
+		width: 120px;
+		height: 40px;
+		margin: 8px;
+		padding: 12px;
+		border: none;
+		border-radius: 12px;
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+	}
+	#search_btn:hover{
+		background-color: grey;
+	}
+</style>
+<body>
+	<h1>TV Show Search</h1>
+	<form id="_search">
+		<input type="search" name="query" id="show_search" placeholder="search for tv shows...">
+		<button type="submit" id="search_btn">search</button>
+	</form>
+	
+<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
